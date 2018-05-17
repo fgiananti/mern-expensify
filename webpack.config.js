@@ -27,6 +27,7 @@ module.exports = {
   },
   devtool: 'cheap-module-eval-sourve-map',
   devServer: {
-    contentBase: path.join(__dirname, 'client')
+    contentBase: path.join(__dirname, 'client'),
+    historyApiFallback: true
   }
 }
