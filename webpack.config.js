@@ -14,7 +14,9 @@ module.exports = {
       exclude: /node_modules/,
       query: {
         presets: ['env', 'react'],
-        plugins: ['transform-class-properties']
+        plugins: ['transform-class-properties',
+                  'transform-object-rest-spread'
+        ]
       }
     }, {
       test: /.s?cssx?$/,
