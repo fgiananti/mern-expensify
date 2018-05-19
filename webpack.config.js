@@ -13,10 +13,14 @@ module.exports = {
       loader: 'babel-loader',
       exclude: /node_modules/,
       query: {
-        presets: ['env', 'react'],
-        plugins: ['transform-class-properties',
-                  'transform-object-rest-spread'
-        ]
+        presets: [
+          'env',
+          'react'
+        ],
+        plugins: [
+          'transform-class-properties',
+          'transform-object-rest-spread'
+        ],
       }
     }, {
       test: /.s?cssx?$/,
